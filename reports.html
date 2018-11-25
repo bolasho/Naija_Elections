@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="HandheldFriendly" content="true">
+  <title> Reports </title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/nvd3/1.8.6/nv.d3.css">
+  <link rel="stylesheet" href="css/dash2.css">
+  <link rel="stylesheet" href="css/dremo.css">
+  <link rel="stylesheet" href="css/header-fixed.css">
+  <link href='http://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/footer1.css">
+  <link rel="stylesheet" href="css/footer-distributed-with-contact-form.css">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+  <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+  <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min2.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/small-business.css" rel="stylesheet">
+</head>
+<!--p>ref:https://css-tricks.com/how-to-make-a-modern-dashboard-with-nvd3-js/</p-->
+<!--p>ref:http://nvd3.org/examples/lineWithFocus.html</p-->
+<body>
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <h1><a href="#">b_<span>Analytics</span></a></h1>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="poll.html">Poll Results</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="candidate_cloud.html">Candidate sentiment</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="party_cloud.html">Party Sentiment
+                   
+              </a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="reports.html">Report
+                 <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="profile.html">Voters Demography
+                  
+
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+</header>
+<!--div class="dashboard-flex-container"-->
+<div class="dashboard-flex-container">
+   
+   <!--div class="box a"-->
+     
+     <div id="box h" class="with-3d-shadow with-transitions box h" style="background-color:#9999ff; height: 470px;max-width: 100%">
+      <h4  style="font-size: calc(0.25em + 1vmin) ; text-decoration: underline"> Poll Results</h4>
+       <p  style="font-size:calc(0.17em + 0.8vmin)">Out of the ovaer-all votes the votes are broken down according to how each region voted replicating the turn out of last elections.
+       <br>
+       The APC are leading on <strong>57%</strong>, PDP on <strong> 40%</strong> while other political parties are on <strong>3%</strong>.</br></p> <p style="font-size:calc(0.17em + 1vmin)">Looking at employments status and how people voted accross parties, voters with no employments voted <strong>55%</strong> for APC, <strong>42%</strong> PDP and others <strong>3%</strong>.On the other hand voters who are employed voted  <strong>59%</strong> APC ,<strong>37%</strong>PDP and others parties received <strong>3%</strong></p>
+       <p style="font-size:calc(0.17em + 0.8vmin)">
+           Female voters, voted <strong>61%</strong> for APC, PDP got <strong>35%</strong>,while other political parties got <strong>4%</strong> vote. The male counter part voted <strong>56%</strong> for APC, <strong>41%</strong> for PDP and <strong>3%</strong> for other political parties.
+       </p>
+       <p style="font-size:calc(0.17em + 0.8vmin)"> Voters with income 20-30k per month voted <strong>10%</strong> for APC, <strong>7%</strong> for PDP and no vote for others parties, voters with income 30-40k per month voted <strong>5%</strong> for APC, <strong>2%</strong> for PDP and no vote for others, voters with income 40-50k per month voted <strong>5%</strong> for APC, <strong>1%</strong> for PDP and no votes for others ,voters with income 50-60k per month voted <strong>2%</strong> for APC, <strong>2%</strong> for PDP and no vote for others , voters with income 60-80k per month voted <strong>1%</strong> for APC, <strong>2%</strong> for PDP and and <strong>1%</strong> for others , voters with income 80-100k per month voted <strong>5%</strong> for APC, <strong>4%</strong> for PDP and no votes for others ,  voters with income 100+k per month voted <strong>12%</strong> for APC, <strong>8%</strong> for PDP and no vote for others,  voters with no income voted <strong>17%</strong> for APC, <strong>14%</strong>for PDP and <strong>1%</strong> for others
+       </p>
+       <p style="font-size:calc(0.17em + 0.8vmin)">
+           Voters in North-Central voted <strong>9%</strong> for APC, <strong>5%</strong> PDP, other Parties <strong>1%</strong>, Voters in North-East voted <strong>8%</strong> for APC, <strong>4%</strong> PDP, other Parties <strong>0%</strong>,  Voters in North-West voted <strong>21%</strong> for APC, <strong>9%</strong> PDP, other Parties <strong>0%</strong>, Voters in South-East voted <strong>2%</strong> for APC, <strong>6%</strong> PDP, other Parties <strong>0%</strong>, Voters in South-South voted <strong>8%</strong> for APC, <strong>11%</strong> PDP, other Parties <strong>1%</strong>, Voters in South-West voted <strong>8%</strong> for APC, <strong>6%</strong> PDP, other Parties <strong>1%</strong>
+       </p>
+       <p style="font-size:calc(0.17em + 0.8vmin)">
+           Voters whose age-group range 18-25 years voted <strong>8%</strong>APC , PDP <strong>7%</strong> Other Parties <strong>1%</strong>, voter age range 25-35 voted <strong>28%</strong> APC,PDP <strong>16%</strong> Other Parties <strong>1%</strong>, voter age range 35-45 voted <strong>14%</strong> APC,PDP <strong>12%</strong> Other Parties <strong>1%</strong>, voter age range 45-55 voted <strong>6%</strong> APC,PDP <strong>4%</strong> Other Parties <strong>0%</strong>, voter age range 55+ voted <strong>1%</strong> APC,PDP <strong>1%</strong> Other Parties <strong>0%</strong>
+       </p>
+       
+     </div>
+     
+  
+  <!--/div-->
+  <div id="box g" class="with-3d-shadow with-transitions box g" style="background-color:#9999ff; height: 470px;max-width: 100%">
+   <h3  style="font-size: calc(0.5em + 1vmin); text-decoration: underline">Voters Approval and sentiments towards candidate</h3>
+   <h4 style="font-size:calc(0.3em + 1vmin) ; text-decoration: underline">After analysing the last 10,000 tweets on both Buhari and Atiku tweets, this are some of the insights we gather.</h4>
+   <p style="font-size:calc(0.3em + 1vmin)">-- Voters ratings for candidate Buhari is 47% while Atiku is also 47%<p>
+   <p style="font-size:calc(0.3em + 1vmin)">--Some of the key words associated wih Buhari when voters mentioned his names are "hear ,vote, fleeing,citizen". Which in my opinion the words "hear, vote" are people believed he hears threm and would vote for him is a positive sentiment, while negative sentiment are the keywords "fleeing, citizen" indicate citizen are fleeing herdsmen attack and feel helpless</p>
+   <p style="font-size:calc(0.3em + 1vmin)">--Some of the key words associated wih Atiku when voters mentioned his names are "Nationwide ,Approval, Sold,Company". Which in my opinion the words "nationwide,Approval" are voters believed that he has nationwide approval and has no ethinic bias which is a positive sentiment, while negative sentiment are the keywords "sold, company" indicate voters believed he might have sold national assets to himself or cronies</p>
+
+  </div>
+  <!--div class="box b">B</div-->
+  <div id="box c" class="with-3d-shadow with-transitions box c" style="background-color:#9999ff; height: 470px ;max-width: 100%">
+  <h3  style="font-size: calc(0.5em + 1vmin) ; text-decoration: underline">Voters Approval and sentiments towards Parties</h3>
+   <h4 style="font-size:calc(0.3em + 1vmin) ; text-decoration: underline ">After analysing the last 10,000 tweets on both APC and PDP tweets, this are some of the insights we gather.</h4>
+   <p style="font-size:calc(0.3em + 1vmin)">-- Voters ratings for APC is <strong>73%</strong> while PDP is  42%<p>
+   <p style="font-size:calc(0.3em + 1vmin)">--Some of the key words associated wih APC in there tweets are "faithful ,integrity, problrems,Nigerias". Which in my opinion the words "faithful, honest" are voters beleive the party is honest hence voters tends to be faithful towards threm, while the keyword "problrems,Nigerias"  believed that APC have not been able to solve Nigerias meriads of problrems.</p>
+   <p style="font-size:calc(0.3em + 1vmin)">--Some of the key words associated wih PDP in there tweets are "atiku ,candidate, shared,looted". Which in my opinion the words "atiku, candidate" are voters beleive the party is excited about the candidate Atiku, which makes sense as Atiku is more popular than the party, on the other hand the keywords "shared,looted" indicate voters beleived that the party shared and looted Nigerias resources while in office..</p>
+  </div>
+  <!--div class="box c">C</div-->
+  <div id="box d" class="with-3d-shadow with-transitions box d" style="background-color:#9999ff; height: 470px ;max-width: 100%">
+  <h3  style="font-size: calc(0.3em + 1vmin) ; text-decoration: underline">Registered Voters</h3>
+  <p style="font-size: calc(0.3em + 1vmin) ; text-decoration: underline">Registered Voters By Region 2015-2018</p>
+
+  <table style="font-size: calc(0.3em + 1vmin)">
+    <tr style="font-size: calc(0.3em + 1vmin)">
+      <th>Region</th>
+      <th>Reg_voter 2015(M)</th>
+      <th>Reg_Voters 2018(M)</th>
+      <th>% Reg_Voters</th>
+    </tr>
+    <tr>
+      <td>North-West</td>
+      <td>17.61</td>
+      <td>18.51</td>
+      <td>25</td>
+    </tr>
+    <tr>
+      <td>North-East</td>
+      <td>9.1</td>
+      <td>9.93</td>
+      <td>14</td>
+    </tr>
+    <tr>
+      <td>North-Central</td>
+       <td>10.33</td>
+       <td>10.59</td>
+       <td>14</td>
+    </tr>
+    <tr>
+      <td>South-West</td>
+      <td>13.73</td>
+      <td>14.62</td>
+      <td>20</td>
+    </tr>
+      <tr>
+      <td>South-South</td>
+       <td>10.06</td>
+       <td>11.1</td>
+       <td>16</td>
+    </tr>
+    <tr>
+      <td>South-East</td>
+      <td>7.67</td>
+      <td>8.29</td>
+      <td>14</td>
+    </tr>
+    
+  </table>
+
+
+
+  <p style="font-size: calc(0.3em + 1vmin) ; text-decoration: underline">2015 General Elections Winning Margin by Region</p>
+  <table style="font-size: calc(0.3em + 1vmin)">
+    <tr style="font-size: calc(0.3em + 1vmin)">
+      <th >Region</th>
+      <th>Winning Margin(%)</th>
+      <th>Winning Party</th>
+      <th>Averge Turn-out(%)</th>
+    </tr>
+    <tr>
+      <td>North-West</td>
+      <td>66.4</td>
+      <td>APC</td>
+      <td>49.6</td>
+    </tr>
+    <tr>
+      <td>North-East</td>
+      <td>57%</td>
+      <td>APC</td>
+      <td>40.7</td>
+    </tr>
+    <tr>
+      <td>North-Central</td>
+       <td>25.5%</td>
+       <td>APC</td>
+       <td>39</td>
+    </tr>
+    <tr>
+      <td>South-West</td>
+      <td>14.8</td>
+      <td>APC</td>
+      <td>35.7</td>
+    </tr>
+      <tr>
+      <td>South-South</td>
+       <td>87.4</td>
+       <td>PDP</td>
+       <td>51.8</td>
+    </tr>
+    <tr>
+      <td>South-East</td>
+      <td>70.4</td>
+      <td>PDP</td>
+      <td>33.8</td>
+    </tr>
+    
+  </table>
+
+  
+
+  </div>
+  <!--div class="box d">D</div-->
+  <div id="box e" class="with-3d-shadow with-transitions box e" style="background-color:#9999ff; height: 470px ;max-width: 100%">
+  <p style="font-size: calc(0.3em + 1vmin) ; text-decoration: underline">Opinion and Verdicts</p>
+  <p style="font-size: calc(0.18em + 1vmin)">
+      Female voters  are slightly likely to vote other parties than male voters. Voters age-groups 18-45 are more likely to vote other political parties compare to 45+ age-group.
+      Voters in North-Central, South-West and South-South are more likely to vote others.
+      Which means voters resentment against both APC and PDP are rife among women and in North-Central,South-West and South-South geo-political zones and Age-Group 18-45 . Even though there is resentment , it is not enough to change the status quo of voters preferences among the leading political parties, APC and PDP which still hold 97% of voters preferences.
+      Therefore our analysis was based on this 2 major parties.
+     APC leads accross all geo-political zones except South-East and South-South and accross all Age-Group, Income, Gender,and employment status.
+  </p>
+  <p style="font-size: calc(0.18em + 1vmin)">
+     On voters sentiments Buhari and Atiku has similar approval ratings. But APC have stronger approval rating than PDP, this is the reason why Buhari is leading Atiku. The polls result is 57% Buhari and 40% percent Atiku. The poll margin of error is plus or minus 3% which means true result of Buhari could be between 60% to 54% and Atiku is somewhere between 43%-37%. APC approval is 73% while PDP is 42%,if we average the party sentiments and candidate sentiment which is APC plus Buhari average rating (73+47)/2=60% which is similar to Buhari's higher margin of 60%, same for Atiku and PDP(47+42)=44.5% which is not too far from Atiku higher margin of 43%. Atiku is actually more popular than his party, his party is driving him down,while Buhari is lifted by his party.The Verdict is Buhari to win as of today, he is winning accross all voters demography.
+
+  <p>
+
+
+  </div>
+  <!--div class="box e">E</div-->
+  <div id="box f" class="with-3d-shadow with-transitions box f" style="background-color:#9999ff; height: 470px ;max-width: 100%">
+     <div>
+       <h3  style="font-size: calc(0.3em + 1vmin) ; text-decoration: underline">Polls Assumption</h3>
+        <ul style="font-size: calc(0.3em + 1vmin)">
+          <li>The sampling is based on 1000 participants between 21 October- 23 November 2018</li>
+          <li>The poll is based on social media participants, with voters who have PVC. </li>
+          <li>The sampling is based on exact turn out and voting weights per region in last elections</li>
+          <li>The margin of error is +-3% , meaning the result could be between +3% or -3% of actual results of polls.</li>
+          <li>Recent events might not be captured in this analysis but will be captured in the next polling results in December 2018</li>
+        </ul>
+     </div>
+    <h3  style="font-size: calc(0.3em + 1vmin) ; text-decoration: underline">Winners</h3>
+    <p style="font-size: calc(0.3em + 1vmin)"> Winner of November Draws</p>
+    <ul style="font-size: calc(0.3em + 1vmin)">
+        <li>Adeola Odeku</li>
+    </ul>
+    <p style="font-size: calc(0.3em + 1vmin)">Please send us your thoughts and opinion by filling the forms at the bottom of this page. Your opinion will be appreciated, Thank You!</p>
+  </div>
+  <!--div class="box f">F</div-->
+
+  
+   
+  <footer class="footer-distributed">
+
+            <div class="footer-left">
+
+                <h3>b_<span>Analytics</span></h3>
+
+                <p class="footer-links">
+                    <a href="index.html">Home</a>
+                    ·
+                    <a href="poll.html">Poll Results</a>
+                    ·
+                    <a href="candidate_cloud.html">Candidate Standing</a>
+                    .
+                    <a href="party_cloud.html.html"  >Party Sentiment</a>
+                    ·
+                    <a href="reports.html">Report</a>
+                    .
+                    <a href="profile.html"> Voters Demography</a>
+                    
+                    
+                </p>
+
+                <p class="footer-company-name">b_Analytics &copy; 2018     powered by  <a href="https://bmetrics.ie">B_Metrics</a></p>
+
+                <div class="footer-icons">
+
+                    <a href="https://www.facebook.com/B_Analytics-254628705251815/"><i class="fa fa-facebook"></i></a>
+                    <a href="https://twitter.com/analytics_b"><i class="fa fa-twitter"></i></a>
+                    
+
+                </div>
+
+            </div>
+
+            <div class="footer-right">
+
+                <p>Contact Us</p>
+
+                <form action="http://formspree.io/bolashofoluwe@gmail.com" method="post">
+
+                    <input type="text" name="email" placeholder="Email" />
+                    <textarea name="message" placeholder="Message"></textarea>
+                    <button>Send</button>
+                </form>
+
+            </div>
+
+        </footer>
+</body>
+</html>

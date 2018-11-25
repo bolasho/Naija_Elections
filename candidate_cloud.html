@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Naija Elections Opinion Polls</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/nvd3/1.8.6/nv.d3.css">
+  <link rel="stylesheet" href="css/dash2.css">
+  <link rel="stylesheet" href="css/demo.css">
+  <link rel="stylesheet" href="css/header-fixed.css">
+  <link href='http://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/footer1.css">
+  <link rel="stylesheet" href="css/footer-distributed-with-contact-form.css">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+  <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min2.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+  <link href="css/small-business.css" rel="stylesheet">
+</head>
+<!--p>ref:https://css-tricks.com/how-to-make-a-modern-dashboard-with-nvd3-js/</p-->
+<!--p>ref:http://nvd3.org/examples/lineWithFocus.html</p-->
+<body>
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <h1><a href="#">b_<span>Analytics</span></a></h1>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item ">
+              <a class="nav-link" href="index.html">Home
+                
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="poll.html">Poll Results</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Candidate Sentiment
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="party_cloud.html">Party Sentiment</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="reports.html">Report</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="profile.html">Voters Demography</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+</header>
+  
+   <div class="dashboard-flex-container">
+        <div
+        id="buhariVotersSentiments"
+        class="with-3d-shadow with-transitions buhariVotersSentiments"
+        style="width: 30%; height: 100% ">
+          <svg></svg>
+       </div>
+     <div
+        id="buhari_ass_words"
+        class="with-3d-shadow with-transitions buhari_ass_words"
+        style="width: 30%; height: auto "
+    >
+        <svg></svg>
+    </div>   
+
+    <div
+        id="buhari_cloud"
+        class="with-3d-shadow with-transitions buhari_cloud"
+        style="width: 30%; height: auto background-color= #efefef"
+    >   
+        <img src="images/Buhari.jpg" alt=""  height="55px" width="55px" >
+        <H3>Buhari Word Clouds</H3>
+        <object   type="text/html" data="buhari.html" width="370px" height="350px" position="relative" margin-top= "-20px" style="border:5px ridge blue ">
+                </object>
+        <svg ></svg>
+            
+    </div>
+
+    <div
+        id="atikuVotersSentiments"
+        class="with-3d-shadow with-transitions atikuVotersSentiments"
+        style="width: 30%; height: auto "
+    >
+        <svg></svg>
+    </div>
+     <div
+        id="atiku_ass_word"
+        class="with-3d-shadow with-transitions atiku_ass_word"
+        style="width: 30%; height: auto "
+    >
+        <svg></svg>
+    </div>
+
+    <div
+        id="atiku_Cloud"
+        class="with-3d-shadow with-transitions atiku_Cloud"
+        style="width: 30%; height: auto "
+    >
+       <img src="images/atiku-abubakar.jpg" alt=""  height="55px" width="55px" >
+       <H3>Atiku Word Clouds</H3>
+        <object   type="text/html" data="atiku1.html" width="370px" height="350px" position="relative" margin-top= "-20px" style="border:5px ridge blue ">
+                </object>
+        <svg></svg>
+    </div>
+ <footer class="footer-distributed">
+
+            <div class="footer-left">
+
+                <h3>b_<span>Analytics</span></h3>
+
+                <p class="footer-links">
+                    <a href="index.html">Home</a>
+                    ·
+                    <a href="poll.html">Poll Results</a>
+                    ·
+                    <a href="candidate_cloud.html">Candidate Standing</a>
+                    .
+                    <a href="party_cloud.html.html"  >Party Sentiment</a>
+                    ·
+                    <a href="reports.html">Report</a>
+                    .
+                    <a href="profile.html"> Voters Demography</a>
+                    
+                    
+                </p>
+
+                <p class="footer-company-name">b_Analytics &copy; 2018     powered by  <a href="https://bmetrics.ie">B_Metrics</a></p>
+
+                <div class="footer-icons">
+
+                    <a href="https://www.facebook.com/B_Analytics-254628705251815/"><i class="fa fa-facebook"></i></a>
+                    <a href="https://twitter.com/analytics_b"><i class="fa fa-twitter"></i></a>
+                    
+
+                </div>
+
+            </div>
+
+            <div class="footer-right">
+
+                <p>Contact Us</p>
+
+                <form action="http://formspree.io/bolashofoluwe@gmail.com" method="post">
+
+                    <input type="text" name="email" placeholder="Email" />
+                    <textarea name="message" placeholder="Message"></textarea>
+                    <button>Send</button>
+                </form>
+
+            </div>
+
+        </footer>
+
+</div>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/series-label.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/highcharts-more.js"></script>
+<script src="https://code.highcharts.com/modules/heatmap.js"></script>
+<script src="https://code.highcharts.com/modules/treemap.js"></script>
+
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="https://rawgit.com/jasondavies/d3-cloud/master/build/d3.layout.cloud.js"></script>
+   
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.2/d3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/nvd3/1.8.6/nv.d3.js"></script>
+<script src="js/dash4.js"></script>
+
+</body>
+</html>

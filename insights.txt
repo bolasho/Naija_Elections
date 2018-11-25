@@ -1,0 +1,11 @@
+Voters who are employed are twice as likely to vote other parties than voters who are not employed and male voters are also more likely to vote other paties compare to female voter.
+Voters in North-Central and South-West are more likely to vote for others Parties and Age-group 35 and over.
+Which means voters resentment against both APC and PDP are rife among men and in North-Central and South-West geo-political zones and Age-Group 35 and over. Even though there is resentment not enough to change the status quo of voters preferences among the leading political parties, APC and PDP which still hold 97% of voters preferences.
+Therefore our analysis was based on this 2 major parties.
+APC are leading accross income groups , while PDP leads in voters who earns 50-60k per month.
+APC also leads accross all geo-political zones except South-East and accross all Age-Group.
+
+On voters sentiments Buhari and Atiku Has Similar approval ratings. But APC have stronger approval rating than PDP, this is the reason why Buhari is leading Atiku. The polls result is 63% Buhari and 34% percent Atiku. The poll margin of error is plus or minus 4% which means true result is Buhari could be between 67% to 59% and Atiku is somewhere between 38%-30%. So if they have similar approval ratings if we average the party sentiments and candidate sentiment which is APC and Buhari averager rating (73+47)/2=60%, Same for Atiku and PDP(47+42)=44.5% which is not too far from Atiku higher margin of 38%. Atiku is actually more popular than his party. The Verdict is Buhari to win as of today.
+
+
+repo:git remote add origin https://github.com/bolasho/Naija_Elections.git
