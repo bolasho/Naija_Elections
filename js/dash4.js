@@ -4,6 +4,10 @@ Highcharts.chart('atiku_ass_word', {
     minColor: '#29a329',
     maxColor: Highcharts.getOptions().colors[0]
   },
+  credits: {
+        text: 'bmetrics.ie',
+        href: 'https://bmetrics.ie'
+    },
   series: [{
     type: 'treemap',
     layoutAlgorithm: 'squarified',
@@ -60,6 +64,10 @@ Highcharts.chart('atikuVotersSentiments', {
     plotBorderWidth: 0,
     plotShadow: false
   },
+  credits: {
+        text: 'bmetrics.ie',
+        href: 'https://bmetrics.ie'
+    },
 
   title: {
     text: 'Voters Approval ratings of Atiku'
@@ -154,6 +162,10 @@ Highcharts.chart('buhariVotersSentiments', {
     plotBorderWidth: 0,
     plotShadow: false
   },
+  credits: {
+        text: 'bmetrics.ie',
+        href: 'https://bmetrics.ie'
+    },
 
   title: {
     text: 'Voters Approval ratings of  Buhari'
@@ -243,6 +255,10 @@ Highcharts.chart('buhari_ass_words', {
     minColor: '#29a329',
     maxColor: Highcharts.getOptions().colors[0]
   },
+  credits: {
+        text: 'bmetrics.ie',
+        href: 'https://bmetrics.ie'
+    },
   series: [{
     type: 'treemap',
     layoutAlgorithm: 'squarified',

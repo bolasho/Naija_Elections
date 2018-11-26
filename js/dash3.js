@@ -4,6 +4,10 @@ Highcharts.chart('PDP_Cloud_freq', {
     minColor: '#29a329',
     maxColor: Highcharts.getOptions().colors[0]
   },
+  credits: {
+        text: 'bmetrics.ie',
+        href: 'https://bmetrics.ie'
+    },
   series: [{
     type: 'treemap',
     layoutAlgorithm: 'squarified',
@@ -88,6 +92,10 @@ Highcharts.chart('PDPVotersSentiments', {
     plotBorderWidth: 0,
     plotShadow: false
   },
+  credits: {
+        text: 'bmetrics.ie',
+        href: 'https://bmetrics.ie'
+    },
 
   title: {
     text: 'Voters Sentiments Towards PDP'
@@ -182,6 +190,10 @@ Highcharts.chart('APCVotersSentiments', {
     plotBorderWidth: 0,
     plotShadow: false
   },
+  credits: {
+        text: 'bmetrics.ie',
+        href: 'https://bmetrics.ie'
+    },
 
   title: {
     text: 'Voters Sentiments Towards APC'
@@ -271,6 +283,10 @@ Highcharts.chart('APC_Cloud_freq', {
     minColor: '#29a329',
     maxColor: Highcharts.getOptions().colors[0]
   },
+  credits: {
+        text: 'bmetrics.ie',
+        href: 'https://bmetrics.ie'
+    },
   series: [{
     type: 'treemap',
     layoutAlgorithm: 'squarified',
