@@ -9,3 +9,11 @@ On voters sentiments Buhari and Atiku Has Similar approval ratings. But APC have
 
 
 repo:git remote add origin https://github.com/bolasho/Naija_Elections.git
+itbanalytics.com
+
+Name Server
+	
+ns-272.awsdns-34.com. 
+ns-1677.awsdns-17.co.uk. 
+ns-1408.awsdns-48.org. 
+ns-552.awsdns-05.net.
