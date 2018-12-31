@@ -5,6 +5,9 @@ body {
     background-color: #eeeeee;
     
 }
+nav{
+  margin-bottom: 10px;
+}
 @import 'https://code.highcharts.com/css/highcharts.css';
 
 .highcharts-background {
