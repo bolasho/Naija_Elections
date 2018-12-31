@@ -8,12 +8,33 @@ APC also leads accross all geo-political zones except South-East and accross all
 On voters sentiments Buhari and Atiku Has Similar approval ratings. But APC have stronger approval rating than PDP, this is the reason why Buhari is leading Atiku. The polls result is 63% Buhari and 34% percent Atiku. The poll margin of error is plus or minus 4% which means true result is Buhari could be between 67% to 59% and Atiku is somewhere between 38%-30%. So if they have similar approval ratings if we average the party sentiments and candidate sentiment which is APC and Buhari averager rating (73+47)/2=60%, Same for Atiku and PDP(47+42)=44.5% which is not too far from Atiku higher margin of 38%. Atiku is actually more popular than his party. The Verdict is Buhari to win as of today.
 
 
+December observations
+
+1.BUhari increased by 2.2% from November, Atiku reduced by 5.3%, other and new entrants are taking votes from Atiku while despite 2 additional candidates added this month Buhari is still able to stretch his leads.
+
+This month around there is a turn around of female voters,64.1% voting Aiku, 23.9% voting Buhari,while men voted 62.8% Buhari and 31.7% Atiku. However ratio of male to female in this poll is 10:1.
+
+Sowore is popular amongst voters with no income and low income, while ezekwezili is popular among higher income earners.
+Southwest voter are most likely to vote candidates other than Buhari and Atiku
+
+Voters 18-25 preffered Atiku while 25+ voted Buhari
+
+
+
+
 repo:git remote add origin https://github.com/bolasho/Naija_Elections.git
 itbanalytics.com
 
 Name Server
 	
 ns-272.awsdns-34.com. 
+
+
+
+
+
+
+
 ns-1677.awsdns-17.co.uk. 
 ns-1408.awsdns-48.org. 
 ns-552.awsdns-05.net.

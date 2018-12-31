@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Naija Polls</title>
+  <title>Naija Elections</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/nvd3/1.8.6/nv.d3.css">
   <link rel="stylesheet" href="css/dash2.css">
   <link rel="stylesheet" href="css/demo.css">
@@ -19,9 +19,9 @@
   <link href="css/small-business.css" rel="stylesheet">
 </head>
 <!--p>ref:https://css-tricks.com/how-to-make-a-modern-dashboard-with-nvd3-js/</p-->
-<!--p>ref:http://nvd3.org/examples/lineWithFocus.html</p-->
+<!--p>ref:https://www.highcharts.com/demo/dynamic-update/grid-light</p-->
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
         <h1><a href="#">b_<span>Analytics</span></a></h1>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,6 +37,7 @@
             <li class="nav-item dropdown">
                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                Poll Results
+               <span class="sr-only">(current)</span>
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                  <a class="dropdown-item" href="Dec_poll.html">December Poll Results</a>
@@ -58,7 +59,7 @@
             <li class="nav-item dropdown">
                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                Party Sentiment
-               <span class="sr-only">(current)</span>
+               
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                  <a class="dropdown-item" href="Dec_party_cloud.html">December Party Sentiments</a>
@@ -85,62 +86,52 @@
       </div>
     </nav>
 
-    </div>
-
 </header>
+
   
    <div class="dashboard-flex-container">
         <div
-        id="APCVotersSentiments"
-        class="with-3d-shadow with-transitions APCVotersSentiments"
-        style="width: 30%; height: 100% ">
-          <svg></svg>
-       </div>
-     <div
-        id="APC_Cloud_freq"
-        class="with-3d-shadow with-transitions APC_Cloud_freq"
-        style="width: 30%; height: auto "
-    >
-        <svg></svg>
-    </div>   
-
-    <div
-        id="apc_cloud"
-        class="with-3d-shadow with-transitions apc_cloud"
-        style="width: 30%; height: auto"
-    >   
-        <img src="images/APC.jpg" alt=""  height="55px" width="55px" >
-        <H3>APC Word Clouds</H3>
-        <object   type="text/html" data="apc.html" width="370px" height="350px" position="relative" margin-top= "-20px" style="border:5px ridge blue ">
-                </object>
-        <svg></svg>
-            
-    </div>
-
-    <div
-        id="PDPVotersSentiments"
-        class="with-3d-shadow with-transitions PDPVotersSentiments"
-        style="width: 30%; height: auto "
+        id="PollsResult"
+        class="with-3d-shadow with-transitions PollsResult"
+        style="width: 50%; height: auto "
     >
         <svg></svg>
     </div>
      <div
-        id="PDP_Cloud_freq"
+        id="EmploymentStatusVoters"
+        class="with-3d-shadow with-transitions EmploymentStatusVoters"
+        style="width: 50%; height: auto"
+    >
+        <svg></svg>
+    </div>
+    <div
+        id="GenderVotesAccrossParty"
+        class="with-3d-shadow with-transitions GenderVotesAccrossParty"
+        
+    >
+        <svg></svg>
+    </div>
+
+    <div
+        id="IncomePartyChoice"
+        class="with-3d-shadow with-transitions IncomePartyChoice"
+        
+    >
+        <svg></svg>
+    </div>
+     <div
+        id="PoliticalRegion"
         class="with-3d-shadow with-transitions PoliticalRegion"
-        style="width: 30%; height: auto "
+        
     >
         <svg></svg>
     </div>
 
     <div
-        id="PDP_Cloud"
-        class="with-3d-shadow with-transitions PDP_Cloud"
-        style="width: 30%; height: auto "
+        id="RegionAgeGroup"
+        class="with-3d-shadow with-transitions RegionAgeGroup"
+        
     >
-       <img src="images/PDP-Logo.jpg" alt=""  height="55px" width="55px" >
-       <H3>PDP Word Clouds</H3>
-        <object   type="text/html" data="pdp.html" width="370px" height="350px" position="relative" margin-top= "-20px" style="border:5px ridge blue ">
-                </object>
         <svg></svg>
     </div>
     <footer class="footer-distributed">
@@ -156,7 +147,7 @@
                     ·
                     <a href="candidate_cloud.html">Candidate Standing</a>
                     .
-                    <a href="party_cloud.html"  >Party Sentiment</a>
+                    <a href="party_cloud.html.html"  >Party Sentiment</a>
                     ·
                     <a href="reports.html">Report</a>
                     .
@@ -196,20 +187,12 @@
 <script src="https://code.highcharts.com/highcharts.js"></script>
 <script src="https://code.highcharts.com/modules/series-label.js"></script>
 <script src="https://code.highcharts.com/modules/exporting.js"></script>
-<script src="https://code.highcharts.com/highcharts-more.js"></script>
-<script src="https://code.highcharts.com/modules/heatmap.js"></script>
-<script src="https://code.highcharts.com/modules/treemap.js"></script>
 
-<script src="http://d3js.org/d3.v3.min.js"></script>
-<script src="https://rawgit.com/jasondavies/d3-cloud/master/build/d3.layout.cloud.js"></script>
-   
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.2/d3.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/nvd3/1.8.6/nv.d3.js"></script>
-<script src="js/dash3.js"></script>
+<script src="js/dec_dash.js"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>

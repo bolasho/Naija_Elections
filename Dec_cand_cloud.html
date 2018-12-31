@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Naija Polls</title>
+  <title>Naija Elections Opinion Polls</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/nvd3/1.8.6/nv.d3.css">
   <link rel="stylesheet" href="css/dash2.css">
   <link rel="stylesheet" href="css/demo.css">
@@ -21,7 +21,7 @@
 <!--p>ref:https://css-tricks.com/how-to-make-a-modern-dashboard-with-nvd3-js/</p-->
 <!--p>ref:http://nvd3.org/examples/lineWithFocus.html</p-->
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
         <h1><a href="#">b_<span>Analytics</span></a></h1>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -48,6 +48,7 @@
             <li class="nav-item dropdown">
                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                Candidate Sentiment
+               <span class="sr-only">(current)</span>
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                  <a class="dropdown-item" href="Dec_cand_cloud.html">December Candidate Sentiments</a>
@@ -58,7 +59,6 @@
             <li class="nav-item dropdown">
                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                Party Sentiment
-               <span class="sr-only">(current)</span>
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                  <a class="dropdown-item" href="Dec_party_cloud.html">December Party Sentiments</a>
@@ -85,65 +85,63 @@
       </div>
     </nav>
 
-    </div>
-
 </header>
   
    <div class="dashboard-flex-container">
         <div
-        id="APCVotersSentiments"
-        class="with-3d-shadow with-transitions APCVotersSentiments"
+        id="buhariVotersSentiments"
+        class="with-3d-shadow with-transitions buhariVotersSentiments"
         style="width: 30%; height: 100% ">
           <svg></svg>
        </div>
      <div
-        id="APC_Cloud_freq"
-        class="with-3d-shadow with-transitions APC_Cloud_freq"
+        id="buhari_ass_words"
+        class="with-3d-shadow with-transitions buhari_ass_words"
         style="width: 30%; height: auto "
     >
         <svg></svg>
     </div>   
 
     <div
-        id="apc_cloud"
-        class="with-3d-shadow with-transitions apc_cloud"
-        style="width: 30%; height: auto"
+        id="buhari_cloud"
+        class="with-3d-shadow with-transitions buhari_cloud"
+        style="width: 30%; height: auto background-color= #efefef"
     >   
-        <img src="images/APC.jpg" alt=""  height="55px" width="55px" >
-        <H3>APC Word Clouds</H3>
-        <object   type="text/html" data="apc.html" width="370px" height="350px" position="relative" margin-top= "-20px" style="border:5px ridge blue ">
+        <img src="images/Buhari.jpg" alt=""  height="55px" width="55px" >
+        <H3>Buhari Word Clouds</H3>
+        <object   type="text/html" data="dec_buh2.html" width="370px" height="350px" position="relative" margin-top= "-20px" style="border:5px ridge blue ">
                 </object>
-        <svg></svg>
+        <svg ></svg>
             
     </div>
 
     <div
-        id="PDPVotersSentiments"
-        class="with-3d-shadow with-transitions PDPVotersSentiments"
+        id="atikuVotersSentiments"
+        class="with-3d-shadow with-transitions atikuVotersSentiments"
         style="width: 30%; height: auto "
     >
         <svg></svg>
     </div>
      <div
-        id="PDP_Cloud_freq"
-        class="with-3d-shadow with-transitions PoliticalRegion"
+        id="atiku_ass_word"
+        class="with-3d-shadow with-transitions atiku_ass_word"
         style="width: 30%; height: auto "
     >
         <svg></svg>
     </div>
 
     <div
-        id="PDP_Cloud"
-        class="with-3d-shadow with-transitions PDP_Cloud"
+        id="atiku_Cloud"
+        class="with-3d-shadow with-transitions atiku_Cloud"
         style="width: 30%; height: auto "
     >
-       <img src="images/PDP-Logo.jpg" alt=""  height="55px" width="55px" >
-       <H3>PDP Word Clouds</H3>
-        <object   type="text/html" data="pdp.html" width="370px" height="350px" position="relative" margin-top= "-20px" style="border:5px ridge blue ">
+       <img src="images/atiku-abubakar.jpg" alt=""  height="55px" width="55px" >
+       <H3>Atiku Word Clouds</H3>
+        <object   type="text/html" data="dec_atiku2.html" width="370px" height="350px" position="relative" margin-top= "-20px" style="border:5px ridge blue ">
                 </object>
         <svg></svg>
     </div>
-    <footer class="footer-distributed">
+ <footer class="footer-distributed">
 
             <div class="footer-left">
 
@@ -205,11 +203,10 @@
    
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.2/d3.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/nvd3/1.8.6/nv.d3.js"></script>
-<script src="js/dash3.js"></script>
+<script src="js/dec_dash4.js"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 </body>
 </html>
