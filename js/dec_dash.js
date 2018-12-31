@@ -399,21 +399,21 @@ Highcharts.chart('EmploymentStatusVoters', {
   series: [{
     name: 'Buhari',
     data: [57.7,60.2],
-    pointWidth: 15,
+    pointWidth: 20,
     pointPadding: 0.25,
     borderWidth: 2.0,
     color:'green'
   }, {
     name: 'Atiku',
     data: [37.3,32.9],
-    pointWidth: 15,
+    pointWidth: 20,
     pointPadding: 0.25,
     borderWidth: 2.0,
     color:'red'
   }, {
     name: 'Ezekwezili',
     data: [1.2,3.9],
-    pointWidth: 15,
+    pointWidth: 20,
     pointPadding: 0.25,
     borderWidth: 2.0,
     color:'purple'
@@ -421,7 +421,7 @@ Highcharts.chart('EmploymentStatusVoters', {
   {
     name: 'Sowore',
     data: [2.5,1.3],
-    pointWidth: 15,
+    pointWidth: 20,
     pointPadding: 0.25,
     borderWidth: 2.0,
     color:'blue'
@@ -429,7 +429,7 @@ Highcharts.chart('EmploymentStatusVoters', {
   {
     name: 'OTHERS',
     data: [1.2,1.7],
-    pointWidth: 15,
+    pointWidth: 20,
     pointPadding: 0.25,
     borderWidth: 2.0,
     color:'orange'
