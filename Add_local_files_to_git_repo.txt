@@ -1,0 +1,20 @@
+1.go to git repo create a folder to hold all your file and copy URL eg 'https://github.com/bolasho/Machine_Learning_Algo.git'
+2. git init
+3. git add .
+4. git commit -m "first commit" --change this to something else after first commit
+5. git remote add origin https://github.com/bolasho/Machine_Learning_Projects-Exercise.git
+6. git push -u origin master
+7. To force push  'git push origin master --force'
+     git push -f origin master-- force push for first commit
+if you want to put it in another folder in your repo you can just point it to another by
+
+7.git remote set-url origin git://new.url.here eg
+git remote set-url origin https://github.com/bolasho/Machine_Learning_Algo.git
+
+8. To remove .git created by git init use 'find . -type f | grep -i "\.git" | xargs rm' or "rm -rf .git"
+9.To resolve conflict if there is changes in repository pull everything and push again to pull use
+"git pull -r origin master"
+
+To deploy webpage on git hub
+
+https://help.github.com/articles/configuring-a-publishing-source-for-github-pages/#publishing-your-github-pages-site-from-a-docs-folder-on-your-master-branch
